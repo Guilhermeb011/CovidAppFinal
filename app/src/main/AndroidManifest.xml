@@ -5,12 +5,21 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
-        android:theme="@style/Theme.AppCompat.Light"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="covid-app"
         android:roundIcon="@mipmap/ic_launcher"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity
+            android:name=".Leitura"
+            android:exported="false" />
+        <activity
+            android:name=".Gravacao"
+            android:exported="false" />
+        <activity
+            android:name=".Sugestoes"
+            android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -37,9 +46,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
