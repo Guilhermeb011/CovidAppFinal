@@ -77,14 +77,14 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="348dp"
+                    android:id="@+id/preven"
+                    android:layout_width="353dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:padding="10sp"
                     android:text="@string/info_previnir"
                     android:textAllCaps="true"
                     android:textColor="@color/text"
-                    android:id="@+id/preven"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 

@@ -1,91 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/text">
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".LoginActivity"
+android:background="@color/text">
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/fa_a_o_login"
-        android:textSize="30sp"
-        android:textColor="@color/background"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="30dp"
+        android:text="@string/fa_a_o_login"
+        android:textColor="@color/background"
+        android:textSize="30sp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_horizontal"
             android:orientation="vertical">
+
             <EditText
                 android:id="@+id/email"
                 android:layout_width="300dp"
                 android:layout_height="60dp"
-                android:ems="10"
-                android:maxLength="70"
-                android:inputType="textEmailAddress"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="80dp"
-                android:padding="10dp"
                 android:background="@color/white"
-                android:hint="@string/e_mail"/>
+                android:ems="10"
+                android:hint="@string/e_mail"
+                android:inputType="textEmailAddress"
+                android:maxLength="70"
+                android:padding="10dp" />
 
             <EditText
                 android:id="@+id/senha"
                 android:layout_width="300dp"
                 android:layout_height="60dp"
-                android:ems="10"
-                android:maxLength="20"
-                android:inputType="textPassword"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:padding="10dp"
                 android:background="@color/white"
-                android:hint="@string/senha"/>
+                android:ems="10"
+                android:hint="@string/senha"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:padding="10dp" />
 
             <Button
+                android:id="@+id/botao_enviar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
                 android:backgroundTint="@color/white"
-                android:id="@+id/botao_enviar"
                 android:text="@string/entrar"
                 android:textColor="@color/text"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"/>
+                android:textSize="24sp" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:id="@+id/botao_lembrar"
-                android:text="@string/lembrar"
-                android:textColor="@color/text"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
                 android:text="@string/ou"
-                android:textSize="24sp"
-                android:textStyle="italic"
                 android:textColor="@color/white"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp" />
+                android:textSize="24sp"
+                android:textStyle="italic" />
 
             <TextView
+                android:id="@+id/btnregistre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/registre_se"
-                android:id="@+id/registre"
-                android:textSize="24sp"
-                android:textStyle="italic"
-                android:textColor="@color/white"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:clickable="true"/>
+                android:clickable="true"
+                android:text="@string/registre_se"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                tools:ignore="TouchTargetSizeCheck" />
 
 
         </LinearLayout>
